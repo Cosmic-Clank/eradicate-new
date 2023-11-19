@@ -21,18 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.newbridge.eradicate"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      [
-        "expo-notifications",
-        {
-          "sounds": ["./assets/audio/notification.wav"]
-        }
-      ]
-    ]
+    "extra": {
+      "eas": {
+        "projectId": "0ef5c66e-d0e4-4ea8-904d-d8453ebad7a8"
+      }
+    }
   }
 }

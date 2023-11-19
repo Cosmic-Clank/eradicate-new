@@ -60,7 +60,6 @@ class NotificationService {
                 title: "Time to take your pills!",
                 body: message,
                 // data: { data: 'goes here' },
-                sound: 'notification.wav',
             },
             trigger: time,
         });

@@ -2,6 +2,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { useState, useEffect } from 'react';
 import LanguageNavigator from './navigations/LanguageNavigator';
 import SplashScreen from './components/SplashScreen';
+import { StatusBar } from 'expo-status-bar';
+import { COLORS } from './constants';
 
 export default function App() {
 
@@ -15,6 +17,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
+      <StatusBar style='light' backgroundColor={COLORS.PRIMARY} />
       {isLoading ? <SplashScreen /> : <LanguageNavigator />}
       
     </NavigationContainer>
